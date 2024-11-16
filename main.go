@@ -166,7 +166,7 @@ func sortKeyByValue(input map[int]int) []int {
 		keyValues = append(keyValues, KeyValue{Key: key, Value: value})
 	}
 	sort.Slice(keyValues, func(i, j int) bool {
-		return keyValues[i].Value > keyValues[j].Value
+		return keyValues[i].Value < keyValues[j].Value
 	})
 
 	var output []int
